@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #555;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Perform form validation and registration logic here
+
+      // After successful registration, redirect to the desired page
+      window.location.href = "landing page.html"; // Replace with the actual URL of the home page
+    });
+  </script>
+</body>
+</html>
