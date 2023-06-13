@@ -2,57 +2,7 @@
 <html>
 <head>
   <title>Registration Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .container h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #555;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .form-group button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background-color: #555;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styleform.css">
 </head>
 <body>
   <div class="container">
@@ -82,12 +32,8 @@
 
   <script>
     document.getElementById("registrationForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent form submission
-
-      // Perform form validation and registration logic here
-
-      // After successful registration, redirect to the desired page
-      window.location.href = "landing page.html"; // Replace with the actual URL of the home page
+      event.preventDefault(); 
+           window.location.href = "HOME.html"; 
     });
   </script>
 </body>
